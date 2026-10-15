@@ -1,0 +1,47 @@
+#title {
+    background: linear-gradient(to right, #00b3e4, #005fd3);
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -20px;
+    padding: 20px 0;
+    color: white;
+}
+
+#title h1 {
+    margin: 30px auto 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.gambar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+.gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gambar a {
+    text-decoration: none;
+    color: white;
+    background-color: white;
+}
+
+.gambar:hover {
+    background-color: red;
+    transform: scale(1.05);
+    color: black;
+}
