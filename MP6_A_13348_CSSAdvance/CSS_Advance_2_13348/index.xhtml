@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Formulir Pendaftaran Seminar</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Seminar</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="kotak">
+            <h2>Data Peserta</h2>
+            <table cellspacing="4" cellpadding="4" border="1" class="peserta">
+                <tr>
+                    <td style="width: 32%;">
+                        <label for="nama"><strong>Nama Lengkap</strong>
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="nama" name="nama" size="30"/>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="nim"><strong>NPM</strong>
+                    </label>
+                </td>
+                <td>
+                    <input type="text" id="nim" name="nim" size="30"/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <strong>Jenis Kelamin</strong>
+                </td>
+                <td>
+                    <input type="radio" id="laki" name="jk" value="Laki-Laki"/><label for="laki">Laki-Laki</label>
+                    <input type="radio" id="Perempuan" name="jk" value="Perempuan"/><label for="Perempuan">Perempuan</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="fakultas"><strong>Fakultas</strong>
+                    </label>
+                </td>
+                <td>
+                    <select name="fakultas" id="fakultas">
+                        <option>Fakultas Teknik</option>
+                        <option>Fakultas Teknologi Industri</option>
+                        <option>Fakultas Ilmu Sosial dan Ilmu Politik</option>
+                        <option>Fakultas Bisnis dan Ekonomika</option>
+                        <option>Fakultas Teknobiologi</option>
+                        <option>Fakultas Hukum</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+        </div>
+        <div class="kotak">
+            <h2>Seminar</h2>
+            <table cellspacing="4" cellpadding="4" border="1" class="seminar">
+                <tr>
+                <td style="width: 32%;">
+                    <strong>Tipe Tiket</strong>
+                </td>
+                <td>
+                    <select name="tiket" id="tiket">
+                        <option>Reguler</option>
+                        <option>VIP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: center;">
+                    <strong>Pilihan Seminar</strong>
+                </td>
+                <td>
+                    <p>
+                        <input type="checkbox" id="topik1" name="topik" value="Cryptocurrency"/>
+                        <label for="topik1">Cryptocurrency</label><br/><br/>
+                        <input type="checkbox" id="topik2" name="topik" value="Ilmu Pajak"/>
+                        <label for="topik2">Ilmu Pajak</label><br /><br/>
+                        <input type="checkbox" id="topik3" name="topik" value="Hukum Tanah"/>
+                        <label for="topik3">Hukum Tanah</label><br />
+                    </p>
+                </td>
+            </tr>
+            </table>
+        </div>
+
+        <div class="kotak">
+            <h2>Konfirmasi</h2>
+            <table cellspacing="4" cellpadding="4" border="1" class="informasi">
+                <tr>
+                <td style="vertical-align: center; width: 30%;">
+                    <label for="alasan">
+                        <strong>Informasi Tambahan</strong>
+                    </label>
+                </td>
+                <td>
+                    <textarea name="alasan" id="alasan" rows="10" cols="23"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="foto">
+                        <strong>Bukti Pembayaran</strong>
+                    </label>
+                </td>
+                <td>
+                    <input type="file" id="foto" size="18" accept="image/gif, image/jpeg, image/png"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="simpan" value="SUBMIT"/>
+                </td>
+            </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>
